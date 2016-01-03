@@ -1,12 +1,12 @@
-package com.dihaw.inheritance2.withTablePerClassStrategy;
+package com.dihaw.inheritance3.withJoinedStrategy;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="INH_WTPC_FOUR_WHEELER")
-public class FourWheeler_WTPC extends Vehicule_WTPC{
+@Table(name="INH_J_FOUR_WHEELER")
+public class FourWheeler_J extends Vehicule_J{
 	
 	//volant
 	@Column(name="STEERING_WHELL")
@@ -19,7 +19,5 @@ public class FourWheeler_WTPC extends Vehicule_WTPC{
 	public void setSteeringWhell(String steeringWhell) {
 		this.steeringWhell = steeringWhell;
 	}
-	
-	
 
 }

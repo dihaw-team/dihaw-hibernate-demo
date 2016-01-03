@@ -13,19 +13,19 @@ public class App {
 	public static void main(String[] args) {
 		
 /**
-		TEST: to get all the data of TwoWheelerWJS, we have to do this with JOIN:
-			SELECT * FROM inh_wjs_vehicule JOIN inh_wjs_two_wheeler 
-			ON inh_wjs_vehicule.vehicule_id = inh_wjs_two_wheeler.vehicule_id
+		TEST: to get all the data of TwoWheelerJ, we have to do this with JOIN:
+			SELECT * FROM inh_j_vehicule JOIN inh_j_two_wheeler 
+			ON inh_j_vehicule.vehicule_id = inh_j_two_wheeler.vehicule_id
 */
 
-		Vehicule_WJS vehicule = new Vehicule_WJS();
+		Vehicule_J vehicule = new Vehicule_J();
 		vehicule.setVehiculeName("car 1");
 		
-		TwoWheeler_WJS bike = new TwoWheeler_WJS();
+		TwoWheeler_J bike = new TwoWheeler_J();
 		bike.setVehiculeName("Bike 1");
 		bike.setSteeringHandle("Bike Steering Handle");
 		
-		FourWheeler_WJS car = new FourWheeler_WJS();
+		FourWheeler_J car = new FourWheeler_J();
 		car.setVehiculeName("Porshe 1");
 		car.setSteeringWhell("Porshe Steering Wheel");
 		

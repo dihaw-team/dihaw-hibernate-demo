@@ -12,14 +12,14 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Vehicule_WTPC vehicule = new Vehicule_WTPC();
+		Vehicule_TPC vehicule = new Vehicule_TPC();
 		vehicule.setVehiculeName("car 1");
 		
-		TwoWheeler_WTPC bike = new TwoWheeler_WTPC();
+		TwoWheeler_TPC bike = new TwoWheeler_TPC();
 		bike.setVehiculeName("Bike 1");
 		bike.setSteeringHandle("Bike Steering Handle");
 		
-		FourWheeler_WTPC car = new FourWheeler_WTPC();
+		FourWheeler_TPC car = new FourWheeler_TPC();
 		car.setVehiculeName("Porshe 1");
 		car.setSteeringWhell("Porshe Steering Wheel");
 		

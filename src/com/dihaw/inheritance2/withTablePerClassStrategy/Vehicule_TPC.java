@@ -1,4 +1,4 @@
-package com.dihaw.inheritance3.withJoinedStrategy;
+package com.dihaw.inheritance2.withTablePerClassStrategy;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,9 +10,9 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 @Entity
-@Inheritance(strategy=InheritanceType.JOINED) // Inheritance Type : JOINED
-@Table(name="INH_WJS_VEHICULE")
-public class Vehicule_WJS {
+@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS) // Inheritance Type : TABLE_PER_CLASS
+@Table(name="INH_TPC_VEHICULE")
+public class Vehicule_TPC {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

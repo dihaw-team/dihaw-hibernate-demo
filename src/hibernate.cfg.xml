@@ -43,19 +43,19 @@
         <mapping class="com.dihaw.OneToOne.VehiculeOTO"/>
         
 		<mapping class="com.dihaw.CascadeTypes.UserDetailsCT"/>
-        <mapping class="com.dihaw.CascadeTypes.VehiculeCT"/>
+		<mapping class="com.dihaw.CascadeTypes.VehiculeCT"/>
         
         <mapping class="com.dihaw.inheritance1.withSingleTableStrategy.Vehicule_ST" />
         <mapping class="com.dihaw.inheritance1.withSingleTableStrategy.TwoWheeler_ST" />
         <mapping class="com.dihaw.inheritance1.withSingleTableStrategy.FourWheeler_ST" />
         
-        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.Vehicule_WTPC" />
-        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.TwoWheeler_WTPC" />
-        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.FourWheeler_WTPC" />
+        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.Vehicule_TPC" />
+        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.TwoWheeler_TPC" />
+        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.FourWheeler_TPC" />
         
-        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.Vehicule_WJS" />
-        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.TwoWheeler_WJS" />
-        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.FourWheeler_WJS" />
+        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.Vehicule_J" />
+        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.TwoWheeler_J" />
+        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.FourWheeler_J" />
 
     </session-factory>
 
