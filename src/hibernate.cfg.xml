@@ -6,56 +6,18 @@
 <hibernate-configuration>
 
     <session-factory>
+    
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/dihaw_hibernate_demo</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+        
+        <!-- property name="hibernate.cache.use_second_level_cache">true</property-->
 
-        <!-- Database connection settings -->
-        <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://localhost:5432/dihaw_hibernate_demo</property>
-        <property name="connection.username">postgres</property>
-        <property name="connection.password">admin</property>
-
-        <!-- JDBC connection pool (use the built-in) -->
-        <property name="connection.pool_size">1</property>
-
-        <!-- SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
-
-        <!-- Disable the second-level cache  -->
-        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
-
-        <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
-
-        <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">create</property>
-
-        <!-- Names the annotated entity class -->
-        <mapping class="com.dihaw.Embeddable.UserDetailsEmbed"/>
-        
-		<mapping class="com.dihaw.ElementCollection.UserDetailsEC"/>
-        
-        <mapping class="com.dihaw.ManyToMany.UserDetailsMTM"/>
-        <mapping class="com.dihaw.ManyToMany.VehiculeMTM"/>
-        
-        <mapping class="com.dihaw.ManyToOne.UserDetailsMTO"/>
-        <mapping class="com.dihaw.ManyToOne.VehiculeMTO"/>
-        
-        <mapping class="com.dihaw.OneToOne.UserDetailsOTO"/>
-        <mapping class="com.dihaw.OneToOne.VehiculeOTO"/>
-        
-		<mapping class="com.dihaw.CascadeTypes.UserDetailsCT"/>
-		<mapping class="com.dihaw.CascadeTypes.VehiculeCT"/>
-        
-        <mapping class="com.dihaw.inheritance1.withSingleTableStrategy.Vehicule_ST" />
-        <mapping class="com.dihaw.inheritance1.withSingleTableStrategy.TwoWheeler_ST" />
-        <mapping class="com.dihaw.inheritance1.withSingleTableStrategy.FourWheeler_ST" />
-        
-        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.Vehicule_TPC" />
-        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.TwoWheeler_TPC" />
-        <mapping class="com.dihaw.inheritance2.withTablePerClassStrategy.FourWheeler_TPC" />
-        
-        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.Vehicule_J" />
-        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.TwoWheeler_J" />
-        <mapping class="com.dihaw.inheritance3.withJoinedStrategy.FourWheeler_J" />
+        <mapping class="com.dihaw.demo.UserEntity"/>
 
     </session-factory>
 
